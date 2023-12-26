@@ -1,10 +1,11 @@
 .main__home {
     height: 100vh;
     width: auto;
-    background-image: linear-gradient(rgba(238, 237, 243, 0.163),
-            rgba(238, 237, 243, 0.257)), url("../../assets/homepage_bg.jpg");
-    object-fit: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(238, 237, 243, 0.073),
+            rgba(238, 237, 243, 0.104)), url("../../assets/homepage_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +15,34 @@
 }
 
 .home__search {
-    margin-top: 20vh;
+    margin-top: 22vh;
     width: 60vw;
     height: fit-content;
 }
 
+.home__result-sec {
+    background-color: white;
+    padding: 20px;
+    max-width: 70vw;
+    border-radius: 4px;
+}
 
-.result_sec_trends {
+.result__sec-trends {
     display: flex;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.result__sec-suggestion {
+    margin: 20px 0;
+
+}
+
+.result__sec-suggestion h3 {
+    padding-bottom: 10px;
+}
+
+.result__sec-suggestion p {
+    line-height: 1.4rem;
+    font-size: .8rem;
 }
